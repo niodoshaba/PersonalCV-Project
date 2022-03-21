@@ -98,7 +98,6 @@ a, a:hover, a:visited, a:link, a:active {
 }
 
 .header-div .header-border .contact .contact-div {
-  vertical-align: middle;
   line-height: 36px;
 }
 
@@ -149,7 +148,6 @@ a, a:hover, a:visited, a:link, a:active {
 .exp-div {
   width: 100%;
   margin-top: 50px;
-  height: 500px;
   opacity: 0;
 }
 
@@ -275,7 +273,6 @@ a, a:hover, a:visited, a:link, a:active {
 .project-div .each-project .each-project-info {
   width: 50%;
   margin-top: 60px;
-  vertical-align: bottom;
 }
 
 .project-div .each-project .each-project-info .each-project-title {
@@ -298,5 +295,263 @@ a, a:hover, a:visited, a:link, a:active {
 
 .project-div .each-project:first-child {
   margin-top: 0px;
+}
+
+.to-top {
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  right: 15px;
+  bottom: 15px;
+  border-radius: 50px;
+  background-color: #cccccc;
+  display: none;
+}
+
+.to-top div {
+  -webkit-transform: translateY(50%);
+          transform: translateY(50%);
+  font-weight: bolder;
+  color: #000;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    position: relative;
+    min-width: 320px;
+    width: 100%;
+    margin-left: 0;
+  }
+  .menu {
+    display: none;
+  }
+  .header-div {
+    width: 100%;
+    overflow: hidden;
+  }
+  .header-div .header-border {
+    position: relative;
+    border: 1px solid #cccccc;
+    border-left: none;
+    height: 325px;
+    width: 90%;
+    margin-top: 25px;
+    opacity: 0;
+  }
+  .header-div .header-border .photo {
+    position: absolute;
+    top: calc((200px - 120px) / 2);
+    left: 35px;
+    display: inline-block;
+    border: 1px solid yellow;
+    width: 120px;
+    height: 120px;
+    border-radius: 100px;
+    z-index: 100;
+  }
+  .header-div .header-border .info {
+    position: absolute;
+    top: calc((200px - 150px) / 2);
+    right: -400px;
+    display: inline-block;
+    background-color: #F2F2F2;
+    height: 150px;
+    width: 80%;
+  }
+  .header-div .header-border .info .name {
+    position: absolute;
+    top: calc((100% - 112px) / 2);
+    left: 50px;
+    text-align: center;
+    display: inline-block;
+    width: auto;
+  }
+  .header-div .header-border .info .name .name-zh {
+    font-size: 30px;
+    font-weight: bold;
+  }
+  .header-div .header-border .info .name .name-en {
+    font-size: 28px;
+    line-height: 42px;
+  }
+  .header-div .header-border .contact {
+    position: absolute;
+    top: 105%;
+    left: -100px;
+    width: 300px;
+    opacity: 0;
+  }
+  .header-div .header-border .contact .contact-div {
+    line-height: 36px;
+  }
+  .header-div .header-border .contact .contact-div img {
+    height: 20px;
+    margin-right: 5px;
+    -webkit-transform: translateY(5px);
+            transform: translateY(5px);
+  }
+  .skill-div {
+    width: 100%;
+    opacity: 0;
+  }
+  .skill-div .bottom-div {
+    position: relative;
+    width: 150px;
+    height: 25px;
+    margin-top: -10px;
+    background-color: #f2f2f2;
+  }
+  .skill-div .bottom-div span {
+    position: absolute;
+    top: -15px;
+    right: 15px;
+    font-size: 26px;
+  }
+  .skill-div .skill-list-div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 5px;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .skill-div .skill-list-div .skill-list {
+    display: inline-block;
+    width: 25%;
+    font-size: 12px;
+    line-height: 28px;
+  }
+  .exp-div {
+    width: 100%;
+    margin-top: 50px;
+    opacity: 0;
+  }
+  .exp-div .bottom-div {
+    position: relative;
+    width: 150px;
+    height: 25px;
+    margin-top: -10px;
+    background-color: #f2f2f2;
+  }
+  .exp-div .bottom-div span {
+    position: absolute;
+    top: -15px;
+    right: 15px;
+    font-size: 26px;
+  }
+  .exp-div .time-line-border {
+    position: relative;
+    border-left: 1px solid #cccccc;
+    width: 80%;
+    margin-left: 10%;
+  }
+  .exp-div .time-line-border .each-item {
+    margin-top: 25px;
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px);
+  }
+  .exp-div .time-line-border .each-item .each-basic-info div {
+    display: inline-block;
+  }
+  .exp-div .time-line-border .each-item .each-basic-info .exp-dot {
+    display: inline-block;
+    background-color: black;
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    margin-left: -5.5px;
+  }
+  .exp-div .time-line-border .each-item .each-basic-info .company-name {
+    margin-left: 7px;
+  }
+  .exp-div .time-line-border .each-item .each-basic-info .job-position {
+    display: block;
+    margin-left: 15px;
+    font-weight: bold;
+  }
+  .exp-div .time-line-border .each-item .each-basic-info .date-range {
+    display: block;
+    float: initial;
+    margin-left: 15px;
+    line-height: 24px;
+    font-size: 12px;
+    color: #cccccc;
+  }
+  .exp-div .time-line-border .each-item .detail-div {
+    width: 100%;
+  }
+  .exp-div .time-line-border .each-item .detail-div .each-detail {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  .exp-div .time-line-border .each-item .detail-div .each-detail .detail-front {
+    margin-right: 5px;
+    margin-left: 15px;
+  }
+  .exp-div .time-line-border .each-item:first-child {
+    margin-top: 0px;
+  }
+  .exp-div .time-line-border .each-item:hover {
+    -webkit-box-shadow: 2px 2px 5px -2px rgba(0, 0, 0, 0.1);
+            box-shadow: 2px 2px 5px -2px rgba(0, 0, 0, 0.1);
+  }
+  .project-div {
+    width: 100%;
+    margin-top: 50px;
+    opacity: 0;
+  }
+  .project-div .bottom-div {
+    position: relative;
+    width: 150px;
+    height: 25px;
+    margin-top: -10px;
+    background-color: #f2f2f2;
+  }
+  .project-div .bottom-div span {
+    position: absolute;
+    top: -15px;
+    right: 15px;
+    font-size: 26px;
+  }
+  .project-div .each-project {
+    width: 100%;
+    margin-left: 0;
+    display: block;
+    margin-top: 50px;
+    text-align: center;
+  }
+  .project-div .each-project .each-project-info {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .project-div .each-project .each-project-info .each-project-title {
+    line-height: 32px;
+    font-weight: bold;
+  }
+  .project-div .each-project .each-project-info .each-project-content {
+    line-height: 32px;
+  }
+  .project-div .each-project .each-project-prtscr {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .project-div .each-project .each-project-prtscr a img {
+    border: 3px double #f2f2f2;
+    width: 240px;
+  }
+  .project-div .each-project:first-child {
+    margin-top: 0px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
