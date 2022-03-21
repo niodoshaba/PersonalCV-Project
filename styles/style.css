@@ -48,6 +48,7 @@ a, a:hover, a:visited, a:link, a:active {
   height: 200px;
   width: 90%;
   margin-top: 25px;
+  opacity: 0;
 }
 
 .header-div .header-border .photo {
@@ -64,7 +65,7 @@ a, a:hover, a:visited, a:link, a:active {
 .header-div .header-border .info {
   position: absolute;
   top: calc((200px - 80%) / 2);
-  right: -78px;
+  right: -800px;
   display: inline-block;
   background-color: #F2F2F2;
   height: 80%;
@@ -110,6 +111,7 @@ a, a:hover, a:visited, a:link, a:active {
 
 .skill-div {
   width: 100%;
+  opacity: 0;
 }
 
 .skill-div .bottom-div {
@@ -148,6 +150,7 @@ a, a:hover, a:visited, a:link, a:active {
   width: 100%;
   margin-top: 50px;
   height: 500px;
+  opacity: 0;
 }
 
 .exp-div .bottom-div {
@@ -232,9 +235,15 @@ a, a:hover, a:visited, a:link, a:active {
   margin-top: 0px;
 }
 
+.exp-div .time-line-border .each-item:hover {
+  -webkit-box-shadow: 2px 2px 5px -2px rgba(0, 0, 0, 0.1);
+          box-shadow: 2px 2px 5px -2px rgba(0, 0, 0, 0.1);
+}
+
 .project-div {
   width: 100%;
   margin-top: 50px;
+  opacity: 0;
 }
 
 .project-div .bottom-div {
