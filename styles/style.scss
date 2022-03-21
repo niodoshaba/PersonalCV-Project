@@ -1,0 +1,247 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Noto Sans TC", sans-serif;
+}
+
+body {
+  position: relative;
+  min-width: 768px;
+  width: 768px;
+  margin-left: calc( 50% - 768px/2 );
+  background-color: rgb(56, 56, 56);
+}
+
+a, a:hover, a:visited, a:link, a:active {
+  color:#000;
+  text-decoration:none;
+  outline: none;
+}
+
+.menu{
+  ul{
+    padding-top: 25px;
+    text-align: center;
+    li{
+      display: inline;
+      cursor: pointer;
+      margin-left: 50px;
+      margin-right: 50px;
+    }
+    li a:hover{
+      color:#cccccc;    
+    }
+  }
+}
+
+.header-div{
+  width: 100%;
+  overflow: hidden;
+    .header-border{
+      position: relative;
+      border: 1px solid #cccccc;
+      border-left: none;
+      height: 200px;
+      width: 90%;
+      margin-top: 25px;
+      .photo{
+        position: absolute;
+        top: calc((200px - 120px) / 2);
+        left: 35px;
+        display: inline-block;
+        border: 1px solid yellow;
+        width: 120px;
+        height: 120px;
+        border-radius: 100px
+      }
+      .info{
+        position: absolute;
+        top : calc((200px - 80%) / 2);
+        right: -78px;
+        display: inline-block;
+        background-color: #F2F2F2;
+        height: 80%;
+        width: 80%;
+        .name{
+          position: absolute;
+          top: calc((100% - 112px) / 2);
+          left: -20px;
+          display: inline-block;
+          width: auto;
+          .name-zh{
+            font-size:30px;
+            font-weight: bold;
+          }
+          .name-en{
+            font-size:28px;
+            line-height: 42px;
+          }
+        }
+      }
+      .contact{
+        position: absolute;
+        top: calc((100% - 112px) / 2);
+        right: 0px;
+        width: 300px;
+        .contact-div{
+          vertical-align: middle;
+          line-height: 36px;
+        }
+        .contact-div img{
+          height:20px;
+          margin-right: 5px;
+          transform: translateY(5px);
+        }
+      }
+    }
+}
+
+.skill-div{
+  width: 100%;
+  .bottom-div{
+    position: relative;
+    width: 150px;
+    height: 25px;
+    margin-top: -10px;
+    background-color: #f2f2f2;
+    span{
+      position: absolute;
+      top: -15px;
+      right: 15px;
+      font-size: 26px;
+    }
+  }
+  .skill-list-div{
+    display: flex;
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 5px;
+    justify-content: space-around;
+    .skill-list{
+      display: inline-block;
+      width: 25%;
+      line-height: 36px;
+    }
+  }
+}
+
+.exp-div{
+  width: 100%;
+  margin-top: 50px;
+  height: 500px;
+  .bottom-div{
+    position: relative;
+    width: 150px;
+    height: 25px;
+    margin-top: -10px;
+    background-color: #f2f2f2;
+    span{
+      position: absolute;
+      top: -15px;
+      right: 15px;
+      font-size: 26px;
+    }
+  }
+
+  .time-line-border{
+    position: relative;
+    border-left:1px solid #cccccc;
+    width: 80%;
+    margin-left: 10%;
+    .each-item{
+      margin-top: 25px;
+      transform: translateY(10px);
+      .each-basic-info{
+        div{
+          display: inline-block;
+        }
+        .exp-dot{
+          display: inline-block;
+          background-color: black;
+          width: 10px;
+          height: 10px;
+          border-radius: 10px;
+          margin-left: -5.5px;
+        }
+        .company-name{
+          margin-left: 5px;
+        }
+        .job-position{
+          margin-left: 10px;
+          font-weight: bold;
+        }
+        .date-range{
+          float: right;
+          line-height: 32px;
+          font-size: 12px;
+          color: #cccccc
+        }
+      }
+      .detail-div{
+        width: 100%;
+        .each-detail{
+          width: 100%;
+          display: flex;
+          justify-content: flex-start;
+          margin-top: 10px;
+          font-size: 14px;
+          .detail-front{
+            margin-right: 5px;
+            margin-left: 15px;
+          }
+        }
+      }
+    }
+    .each-item:first-child{
+      margin-top: 0px;
+    }
+  }
+}
+
+.project-div{
+  width: 100%;
+  margin-top: 50px;
+  .bottom-div{
+    position: relative;
+    width: 150px;
+    height: 25px;
+    margin-top: -10px;
+    background-color: #f2f2f2;
+    span{
+      position: absolute;
+      top: -15px;
+      right: 15px;
+      font-size: 26px;
+    }
+  }
+  .each-project{
+    width: 80%;
+    margin-left: 10%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+    .each-project-info{
+      width: 50%;
+      margin-top: 60px;
+      vertical-align: bottom;
+      .each-project-title{
+        line-height: 32px;      
+        font-weight: bold;
+      }
+      .each-project-content{
+        line-height: 32px;      
+      }
+    }
+    .each-project-prtscr{
+      width: 40%;
+      a img{
+        border: 3px double #f2f2f2;
+        width: 240px;
+      }
+    }
+  }
+  .each-project:first-child{
+    margin-top: 0px;
+  }
+}
