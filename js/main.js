@@ -13,9 +13,9 @@ $(function(){
             $(".contact").animate({opacity:'1'},function(){
                 $(".skill-div").animate({opacity:'1'},function(){
                     $(".exp-div").animate({opacity:'1'},function(){
-                        $(".project-div").animate({opacity:'1'}),function(){
+                        $(".project-div").animate({opacity:'1'},function(){
                             $(".about-div").animate({opacity:'1'});
-                        };
+                        });
                     });
                 });
             })

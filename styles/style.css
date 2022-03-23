@@ -297,6 +297,86 @@ a, a:hover, a:visited, a:link, a:active {
   margin-top: 0px;
 }
 
+.about-div {
+  width: 100%;
+  margin-top: 50px;
+  opacity: 0;
+}
+
+.about-div .bottom-div {
+  position: relative;
+  width: 150px;
+  height: 25px;
+  margin-top: -10px;
+  background-color: #f2f2f2;
+}
+
+.about-div .bottom-div span {
+  position: absolute;
+  top: -15px;
+  right: 15px;
+  font-size: 26px;
+}
+
+.about-div .about-me {
+  width: 80%;
+  margin-left: 10%;
+  line-height: 32px;
+  margin-top: 25px;
+}
+
+.about-div .has-ability {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 90%;
+  margin-left: 5%;
+}
+
+.about-div .has-ability .has-ability-line {
+  width: 10%;
+  border-top: 1px solid #cccccc;
+  -webkit-transform: translateY(50%);
+          transform: translateY(50%);
+}
+
+.about-div .has-ability .has-ability-content {
+  margin: 15px 30px;
+}
+
+.about-div .each-ability {
+  width: 80%;
+  margin-left: 10%;
+}
+
+.about-div .each-ability .each-ability-title {
+  width: 200px;
+  height: 15px;
+  position: relative;
+  font-size: 20px;
+  margin: 15px 0;
+  background-color: #f2f2f2;
+}
+
+.about-div .each-ability span {
+  position: absolute;
+  top: -10px;
+  left: 10px;
+}
+
+.about-div .each-ability .each-ability-content {
+  line-height: 32px;
+  margin-bottom: 25px;
+}
+
+.about-div .each-ability .each-ability-content:last-child {
+  margin-bottom: 0;
+  padding-bottom: 25px;
+}
+
 .to-top {
   position: fixed;
   width: 50px;
@@ -307,6 +387,7 @@ a, a:hover, a:visited, a:link, a:active {
   border-radius: 50px;
   background-color: #cccccc;
   display: none;
+  z-index: 999;
 }
 
 .to-top div {
@@ -314,6 +395,24 @@ a, a:hover, a:visited, a:link, a:active {
           transform: translateY(50%);
   font-weight: bolder;
   color: #000;
+}
+
+.bottom-bg-block {
+  background-color: #f2f2f2;
+  width: 30px;
+  height: 100px;
+  position: fixed;
+  bottom: 0;
+  right: calc( 50% - 768px/2);
+}
+
+.bottom-bg-border {
+  border: 1px solid #cccccc;
+  width: 30px;
+  height: 80px;
+  position: fixed;
+  bottom: 0;
+  right: calc(( 50% - 768px/2 ) + 20px);
 }
 
 @media screen and (max-width: 768px) {
@@ -552,6 +651,76 @@ a, a:hover, a:visited, a:link, a:active {
   }
   .project-div .each-project:first-child {
     margin-top: 0px;
+  }
+  .about-div {
+    width: 100%;
+    margin-top: 50px;
+    opacity: 0;
+  }
+  .about-div .bottom-div {
+    position: relative;
+    width: 150px;
+    height: 25px;
+    margin-top: -10px;
+    background-color: #f2f2f2;
+  }
+  .about-div .bottom-div span {
+    position: absolute;
+    top: -15px;
+    right: 15px;
+    font-size: 26px;
+  }
+  .about-div .about-me {
+    width: 80%;
+    margin-left: 10%;
+    line-height: 32px;
+    margin-top: 25px;
+  }
+  .about-div .has-ability {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 90%;
+    margin-left: 5%;
+  }
+  .about-div .has-ability .has-ability-line {
+    width: 10%;
+    border-top: 1px solid #cccccc;
+    -webkit-transform: translateY(50%);
+            transform: translateY(50%);
+  }
+  .about-div .has-ability .has-ability-content {
+    margin: 15px 15px;
+  }
+  .about-div .each-ability {
+    width: 80%;
+    margin-left: 10%;
+  }
+  .about-div .each-ability .each-ability-title {
+    width: 200px;
+    height: 15px;
+    position: relative;
+    font-size: 20px;
+    margin: 15px 0;
+    background-color: #f2f2f2;
+  }
+  .about-div .each-ability span {
+    position: absolute;
+    top: -10px;
+    left: 10px;
+  }
+  .about-div .each-ability .each-ability-content {
+    line-height: 32px;
+    margin-bottom: 25px;
+  }
+  .bottom-bg-block {
+    display: none;
+  }
+  .bottom-bg-border {
+    display: none;
   }
 }
 /*# sourceMappingURL=style.css.map */
