@@ -48,13 +48,16 @@ a, a:hover, a:visited, a:link, a:active {
       opacity: 0;
       .photo{
         position: absolute;
-        top: calc((200px - 120px) / 2);
+        top: calc((200px - 130px) / 2);
         left: 35px;
         display: inline-block;
-        border: 1px solid yellow;
-        width: 120px;
-        height: 120px;
-        border-radius: 100px
+        width: 130px;
+        height: 130px;
+        border-radius: 100px;
+        overflow: hidden;
+        img{
+          width: 100%;
+        }
       }
       .info{
         position: absolute;
@@ -381,7 +384,6 @@ a, a:hover, a:visited, a:link, a:active {
           top: calc((200px - 120px) / 2);
           left: 35px;
           display: inline-block;
-          border: 1px solid yellow;
           width: 120px;
           height: 120px;
           border-radius: 100px;

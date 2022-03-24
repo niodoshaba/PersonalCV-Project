@@ -53,13 +53,17 @@ a, a:hover, a:visited, a:link, a:active {
 
 .header-div .header-border .photo {
   position: absolute;
-  top: calc((200px - 120px) / 2);
+  top: calc((200px - 130px) / 2);
   left: 35px;
   display: inline-block;
-  border: 1px solid yellow;
-  width: 120px;
-  height: 120px;
+  width: 130px;
+  height: 130px;
   border-radius: 100px;
+  overflow: hidden;
+}
+
+.header-div .header-border .photo img {
+  width: 100%;
 }
 
 .header-div .header-border .info {
@@ -443,7 +447,6 @@ a, a:hover, a:visited, a:link, a:active {
     top: calc((200px - 120px) / 2);
     left: 35px;
     display: inline-block;
-    border: 1px solid yellow;
     width: 120px;
     height: 120px;
     border-radius: 100px;
