@@ -6,7 +6,7 @@ $(function(){
     var h = $(window).height();
 
  
-    $(".header-border").animate({opacity:'1'},100,function(){
+    $(".header-border").animate({opacity:'1'},1000,function(){
         $(".info").animate({right:'-70px'},1000);
         $(".info").animate({right:'-80px'},100);
         $(".info").animate({right:'-78px'},100,function(){
